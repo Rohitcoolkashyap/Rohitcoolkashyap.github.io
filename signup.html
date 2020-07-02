@@ -1,0 +1,89 @@
+<html>
+    <head>
+    
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+       
+        <style>
+            body{
+                background-color: aliceblue;
+                background-size: 100% 100%;
+            }
+            pre{
+                font-weight: bold;
+                font-size:20px;
+            
+            }
+            .table
+            {
+
+             margin-left: -150px;
+            }
+            input{
+                border-radius: 9px;
+            }
+        </style>
+   </head>
+    <body>
+        <center><h1 class="text-info" ><mark><strong>Sign Up Here!!</strong></mark></h1></center>
+            <center><br><br><table style="padding: 75%">
+    <tr>
+        
+        <th>Name</th>
+        <th><input type="text" required></th>
+    </tr>
+                
+                <tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr>
+                <br>
+                    <tr>
+                       <th>Last Name</th>    <center><th><input type="text" required></th></center>
+                </tr>
+                <tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr>
+                    <tr>
+                        <th>Mobile</th>
+                        <th><input type="number" id="p3" required onblur="f1()"></th>
+                    </tr>
+                
+                <tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr>
+                    <tr><th>E-Mail</th>        <td><input type="email"></td></tr>
+                
+                <tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr>
+                    <tr><th>User</th>         <th><input type="text"></th></tr>
+                
+                <tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr>
+                    <tr><th>Password</th>     <th><input type="password" id="p1"></th></tr>
+                
+                
+                <tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr><tr><th>    </th></tr>
+                    <tr><th>Comfirm password</th>  <th><input type="password" id="p2" onblur="f()"><span id="r"></span></th><tr>              
+        </table> </center>
+                           <br><br><center><button class="btn btn-success">RESET</button>
+                <button class="btn btn-success">SUBMIT</button></center>
+                 
+        <script>
+            function f()
+            {
+                var p1=document.getElementById("p1").value;
+                var p2=document.getElementById("p2").value;
+                if(p1!=p2)
+                {
+                   alert("Password Doesn't Match");
+                }
+            }
+            function f1()
+            {
+                var p3=document.getElementById("p3").value;
+                if(p3.length<10&&p3.length>10)
+                {
+                    alert("Invalid Mobile Number");
+                }
+            }
+        </script>
+
+    </body>
+</html>
